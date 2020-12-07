@@ -1,0 +1,19 @@
+/* [ VARIABLES ] */
+
+:root {
+    
+    /* colours */
+    --white: #FAFCFE;
+    --d-white: #EBEEF0;
+    --grey: #2C2F33;
+    --l-grey: #393E44;
+    --yellow: #F3D34C;
+    --ex-l-grey: #B1B6BA;
+    --green: #43C45F;
+    
+    /* fonts */
+    --font-size: 20px;
+    --font-bold: 700;
+    --font-normal: 400;
+    --font-light: 300;
+}

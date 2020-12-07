@@ -1,0 +1,144 @@
+<!-- [ HOMEPAGE ] -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta charset = "utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>axotellix.me</title>
+    <link rel = "stylesheet" href = "styles/variables.css">
+    <link rel = "stylesheet" href = "styles/header.css">
+    <link rel = "stylesheet" href = "styles/styles.css">
+    <link rel = "stylesheet" href = "styles/interface.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+    <link rel = "stylesheet" href = "styles/menu.css">
+</head>  
+<body>
+    <header>
+        <div id = "navbar">
+            
+        </div>
+        
+        <p>
+            ANDREY RYZHIKOV
+            <span>
+                Student in Mospolytech [2020 - 2024]
+            </span>
+        </p>
+        
+        <img src="imgs/axlogo.png" class = "ax-logo-back" alt = "logo">
+    </header>
+    
+    <!--   [ MENU ]   -->
+	<div id = "menu">
+		<h1>MENU</h1>
+		<ul>
+			<li><a href = "index.html" class = "link">hompage</a></li>
+			<li><a href = "#" class = "link">about</a></li>
+			<li><a href = "lab2.html" class = "link">lab two</a></li>
+			<li><a href = "anim.html" class = "link">lab three</a></li>
+		</ul>
+		<span id = "close">close</span>
+	</div>
+	
+	<script type = "text/javascript">		
+		var nav = document.querySelector("#navbar");
+			menu = document.querySelector("#menu");
+			cls = document.querySelector("#close");
+			
+		nav.onclick = function() {
+			menu.style.display = "block";
+            document.body.style.overflow = "hidden";
+		}
+		cls.onclick = function() {
+			menu.style.display = "none";
+            document.body.style.overflow = "auto";
+		}
+	</script>
+    
+    <main>
+        <!--   [ ABOUT ME ]   -->
+        <section class = "about">
+            <h1 class = "heading">ABOUT ME</h1>
+            <div class = "about-photo">
+                <img src="imgs/man.png" alt="photo">
+            </div>
+            <div class = "about-info">
+                <h1>Who am I ?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, perferendis tempore maiores, fugiat enim facere nostrum eligendi autem sit, deleniti quisquam excepturi nemo laudantium, accusantium reprehenderit fuga corporis. Dolore, hic! Dolore vel blanditiis error nisi, possimus impedit quaerat necessitatibus nemo nobis in eum quo voluptatem repellat dignissimos! Voluptatem odio, accusantium quibusdam reprehenderit dolorem magni, temporibus sint delectus, facilis amet deserunt!<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, perferendis tempore maiores, fugiat enim facere nostrum eligendi autem sit, deleniti quisquam excepturi nemo laudantium, accusantium reprehenderit fuga corporis. Dolore, hic! Dolore vel blanditiis error nisi, possimus impedit quaerat necessitatibus nemo nobis in eum quo voluptatem repellat dignissimos! Voluptatem odio, accusantium quibusdam reprehenderit dolorem magni, temporibus sint delectus, facilis amet deserunt!<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, perferendis tempore maiores, fugiat enim facere nostrum eligendi autem sit, deleniti quisquam excepturi nemo laudantium, accusantium reprehenderit fuga corporis. Dolore, hic! Dolore vel blanditiis error nisi, possimus impedit quaerat necessitatibus nemo nobis in eum quo voluptatem repellat dignissimos! Voluptatem odio, accusantium quibusdam reprehenderit dolorem magni, temporibus sint delectus, facilis amet deserunt!<br><br>
+                </p>
+                <a href="#">see more</a>
+            </div>
+        </section>
+        
+        <!--   [ CONTACT ME ]   -->
+        <section class = "contacts">
+            <h1 class = "heading">CONTACT ME</h1>
+            
+            <form class = "contacts-form" onsubmit = "return false">
+                <elset class = "form-elements inputs">
+                    <input type = "text" name = "name" placeholder = "name ...">
+                    <input type = "text" name = "name" placeholder = "surname ...">
+                    <input type = "email" name = "name" placeholder = "email ...">
+                    <input type = "tel" name = "name" placeholder = "phone ...">
+                    
+                    <input type="submit" value = "SEND">
+                </elset>
+                <elset class = "form-elements textarea"> 
+                    <input type="text" name = "subject" placeholder = "subject ...">   
+                    <textarea name="" id="" maxlength = "1000" placeholder = "your message ..."></textarea>
+                </elset>
+            </form>
+            
+            <h1 class = "heading heading-small">OR FIND ME IN</h1>
+            <table class = "contacts-list">
+                <tr>
+                    <td>vkontakte</td>
+                    <td>vk.com/rsandrey</td>
+                </tr>
+                <tr>
+                    <td>instagram</td>
+                    <td>@axotellix</td>
+                </tr>
+                <tr>
+                    <td>whatsapp</td>
+                    <td>+7-967-820-41-35</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <img src="imgs/axlogo.png" alt = "logo">
+        <p class = "copyright">&copy; 2020 axotellix.me | All rights reserved</p>
+    </footer>
+</body>  
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

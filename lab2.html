@@ -1,0 +1,210 @@
+<!-- [ LAB 2 PAGE ] -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta charset = "utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>css page</title>
+    <link rel = "stylesheet" href = "styles/variables.css">
+    <link rel = "stylesheet" href = "styles/header.css">
+    <link rel = "stylesheet" href = "styles/lab2.css">
+    <link rel = "stylesheet" href = "styles/interface.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+    <link rel = "stylesheet" href = "styles/menu.css">
+    <script src = 'scripts/jquery-3.5.1.min.js'></script>
+    <script src = 'scripts/jQuery.js'></script>
+    
+    <style>
+        main {
+            z-index: 1;
+        }
+
+        main section {
+            display: block;
+        }
+
+        main .heading {
+            color: var(--ex-l-grey);
+            font-size: 3.2em;
+            display: block;
+        }
+        main .heading.heading-small {
+            font-size: 2em;
+        }
+
+        main .heading::before {
+            content: "";
+            width: 200px;
+            height: 2.5px;
+            background: var(--yellow);
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: middle;
+            margin-top: -5px;
+        }
+        main .heading.heading-small::before {
+            width: 100px;
+        }
+    </style>
+</head>  
+<body>	
+
+    <header>
+        <div id = "navbar">
+            
+        </div>
+        
+        <p>
+            ANDREY RYZHIKOV
+            <span>
+                Student in Mospolytech [2020 - 2024]
+            </span>
+        </p>
+        
+        <img src="imgs/axlogo.png" alt = "logo" class = "ax-logo-back">
+    </header>
+    
+	<!--   [ MENU ]   -->
+	<div id = "menu">
+		<h1>MENU</h1>
+		<ul>
+			<li><a href = "index.html" class = "link">hompage</a></li>
+			<li><a href = "#" class = "link">about</a></li>
+			<li><a href = "lab2.html" class = "link">lab two</a></li>
+			<li><a href = "anim.html" class = "link">lab three</a></li>
+		</ul>
+		<span id = "close">close</span>
+	</div>
+	
+	<script type = "text/javascript">		
+		var nav = document.querySelector("#navbar");
+			menu = document.querySelector("#menu");
+			cls = document.querySelector("#close");
+			
+		nav.onclick = function() {
+			menu.style.display = "block";
+            document.body.style.overflow = "hidden";
+		}
+		cls.onclick = function() {
+			menu.style.display = "none";
+            document.body.style.overflow = "auto";
+		}
+	</script>
+	
+	<!--   [ MAIN PART ]   -->
+    <main>
+		<section class = "main-cont">
+			<h1 style = "background-color: #fff">Welcome back !</h1>
+			<a href = "#" class = "link">LINK</a>
+			<hr>
+			
+			<h3>Just an article</h3>
+			<p>
+				<img id = "avatar" alt = "avatar" src = "imgs/man.png">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra bibendum mi vitae tincidunt. Donec faucibus imperdiet odio et commodo. Aliquam ac ligula dignissim, elementum enim at, vehicula turpis. Etiam pulvinar vel est et rutrum. Aliquam elit erat, volutpat non aliquam sit amet, vestibulum ut diam. Maecenas pulvinar nulla in nulla volutpat mattis in sit amet risus. Aenean vehicula orci vel ipsum bibendum, rhoncus egestas dui pulvinar. Praesent vel ligula justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse semper justo in ligula egestas, vel suscipit massa auctor. Quisque non mauris a ex finibus iaculis. Sed lacinia sit amet massa vel scelerisque. Nulla porta augue libero, id tempor est vestibulum nec. Morbi luctus eleifend vulputate.
+			
+			Maecenas sodales mollis porttitor. Donec vitae neque non urna pharetra facilisis. Pellentesque vestibulum lacinia lacus at sagittis. Fusce et erat id est sagittis tempor. Sed velit nunc, placerat et auctor sit amet, imperdiet vitae arcu. Etiam rutrum, ante in sagittis tincidunt, urna eros pellentesque dui, sit amet commodo nulla ante mollis arcu. Sed velit nunc, feugiat ut ullamcorper quis, ornare eu elit. Sed lacinia mauris et purus aliquet cursus non pulvinar nunc. Morbi et tristique nunc. Integer quis porttitor massa, ac interdum dui. Curabitur nec porta sem. Curabitur rutrum at odio semper cursus. Mauris non gravida dolor. 
+			</p>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra bibendum mi vitae tincidunt. Donec faucibus imperdiet odio et commodo. Aliquam ac ligula dignissim, elementum enim at, vehicula turpis. Etiam pulvinar vel est et rutrum. </li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra bibendum mi vitae tincidunt. Donec faucibus imperdiet odio et commodo. Aliquam ac ligula dignissim, elementum enim at, vehicula turpis. Etiam pulvinar vel est et rutrum. </li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra bibendum mi vitae tincidunt. Donec faucibus imperdiet odio et commodo. Aliquam ac ligula dignissim, elementum enim at, vehicula turpis. Etiam pulvinar vel est et rutrum. </li>
+			</ul>
+			
+			
+				<span class = "block">Span 1</span>
+				<span class = "block">Span 2</span>
+				<span class = "block">Span 3</span>
+
+			<br><br>
+
+				<p class = "inline">P tag 1</p>
+				<p class = "inline">P tag 2</p>
+				<p class = "inline">P tag 3</p>
+
+			
+            <div id = "banner"><p>Some space here <span>just for inspiration</span></p></div>
+			
+			
+		</section>
+		
+		<!--   [ CONTACT ME ]   -->
+		<section class = "contacts">
+            <h1 class = "heading">CONTACT ME</h1>
+            
+            <form class = "contacts-form" onsubmit = "return false">
+				<fieldset>
+				<label for = "name">name</label>
+                <input type = "text" id = "name" name = "name" >
+					<br>
+				<label for = "second-name">second name</label>
+                <input type = "text" id = "second-name" name = "second-name" >
+					<br>
+				<label for = "email">email</label>
+                <input type = "email" id = "email" name = "email" >
+					<br>
+				<label for = "tel">phone number</label>
+                <input type = "tel" id = "tel" name = "tel" >
+					<br>
+				</fieldset>
+				
+				<fieldset class = "message">
+                <input type="text" name = "subject" placeholder = "subject ...">   
+                <textarea name="message" id="mess" maxlength = "1000" placeholder = "your message ..."></textarea>
+				</fieldset>
+
+				<input type="submit" value = "SEND">
+            </form>
+            
+            <h1 class = "heading heading-small">OR FIND ME IN</h1>
+            <table class = "contacts-list">
+                <tr>
+                    <td>vkontakte</td>
+                    <td>vk.com/rsandrey</td>
+                </tr>
+                <tr>
+                    <td>instagram</td>
+                    <td>@axotellix</td>
+                </tr>
+                <tr>
+                    <td>whatsapp</td>
+                    <td>+7-967-820-41-35</td>
+                </tr>
+            </table>
+        </section>
+		
+    </main>
+	
+    
+    <footer>
+        <img alt = "logo" src="imgs/axlogo.png">
+        <p class = "copyright">&copy; 2020 axotellix.me | All rights reserved</p>
+    </footer>
+</body>  
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

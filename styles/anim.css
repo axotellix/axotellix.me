@@ -1,0 +1,583 @@
+
+body {
+    margin: 0px !important;
+    background: var(--d-white);
+    font-size: var(--font);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* [ MAIN CONTENT ] */
+
+
+section {
+    display: block;
+}
+
+h1.about-page {
+	text-indent: 50px;
+	padding: 40px;
+	color: var(--ex-l-grey);
+	box-sizing: border-box;
+    font-size: 1.5em;
+}
+
+section.main-cont {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 550px;
+    background: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+section.main-cont h3 {
+	text-indent: 15%;
+	text-transform: uppercase;
+}
+
+#slider-control-panel {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    background: var(--white);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-control-panel .slider-ctrl {
+    text-decoration: none;
+    display: inine-block;
+    text-align: center;
+    flex-basis: 100px;
+    padding: 0 10px 0 10px;
+    transition: color 0.15s;
+    cursor: pointer;
+}
+#slider-control-panel .slider-ctrl:hover {
+    color: black;
+}
+
+#slider-control-panel .slider-ctrl, #slider-control-panel span {
+    color: var(--l-grey);
+    font-weight: var(--font-normal);
+}
+
+
+section.main-cont .css-ex {
+    flex-basis: 250px;
+    min-width: 80%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.main-cont .css-ex:not(.active-win) {display: none;}
+
+/* - 1. text-shadow - */
+section.main-cont .text-shadow p {
+    text-align: center;
+    font-size: 7em;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: var(--font-bold);
+    color: var(--ex-l-grey);
+    text-shadow: 0 0 12px var(--ex-l-grey);
+}
+/* - 2. word-wrap - */
+section.main-cont .word-wrap {
+    background: var(--l-grey);
+    color: var(--ex-l-grey);
+    font-size: 1.2em;
+    //word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+    overflow: hidden;
+    
+}
+section.main-cont .word-wrap p {
+    margin: 50px !important;
+}
+/* - 3. rgba - */
+section.main-cont .rgba .mix-block {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100px;
+}
+section.main-cont .rgba .mix-block-red {
+    background: rgba(250, 0, 0, 0.5);
+    top: -50px;
+}
+section.main-cont .rgba .mix-block-green {
+    background: rgba(0, 250, 0, 0.5);
+    left: 75px;
+}
+section.main-cont .rgba .mix-block-blue{
+    background: rgba(0, 0, 250, 0.5);
+    right: 75px;
+}
+/* - 4. gradient - */
+section.main-cont .gradient .gradient-block {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+section.main-cont .gradient .linear-gradient {
+    background: linear-gradient(135deg, #f7a828 0%, #f4eb28 80%);
+}
+section.main-cont .gradient .radial-gradient {
+    background: radial-gradient(circle, #8028f4 0%, #5128f7 70%);
+}
+section.main-cont .gradient .gradient-block p {
+    margin-bottom: -27px;
+    text-align: center;
+    color: var(--l-grey);
+}
+/* - 5. columns - */
+section.main-cont .columns {
+    column-count: 3;
+    column-gap: 15px;
+    column-rule: dotted;
+    column-width: auto;
+}
+section.main-cont .columns .column-block {
+    background: Orange;
+    height: 400px;
+    width: 100%;
+    min-width: 197px;
+}
+section.main-cont .columns .column-block:nth-child(1) {
+    background-image: url(../imgs/Italy.jpg);
+    background-position: left;
+    background-size: 300% auto;
+}
+section.main-cont .columns .column-block:nth-child(2) {
+    background-image: url(../imgs/Italy.jpg);
+    background-position: center;
+    background-size: 400% auto;
+}
+section.main-cont .columns .column-block:nth-child(3) {
+    background-image: url(../imgs/Italy.jpg);
+    background-position: right;
+    background-size: 300% auto;
+}
+/* - 6. columns - */
+section.main-cont .box-sizing {
+    flex-wrap: wrap;
+}
+section.main-cont .box-sizing .box-sizing-block {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    background: var(--ex-l-grey);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: -100px;
+    padding: 10px;
+    white-space: nowrap;
+}
+section.main-cont .box-sizing h2, section.main-cont .box-sizing h4 {
+    width: 100%;
+    text-align: center;
+    color: var(--ex-l-grey);
+}
+section.main-cont .box-sizing h4 {
+    margin-top: -120px;
+}
+section.main-cont .box-sizing .box-sizing-block p {
+    margin-bottom: -60px;
+    text-align: center;
+    color: var(--ex-l-grey);
+}
+section.main-cont .box-sizing .box-sized-block {
+    box-sizing: border-box;
+}
+section.main-cont .box-sizing .box-sized-block p {
+    margin-bottom: -70px;
+}
+/* - 7. Resizing text-area - */
+section.main-cont .text-area-resize textarea {
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    background: var(--d-white);
+    color: var(--l-grey);
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-family: "Montserrat";
+    resize: both;
+    min-width: 250px;
+    min-height: 250px;
+}
+/* - 8. 2D transformations - */
+section.main-cont .anim-2d {
+    flex-wrap: wrap;
+}
+section.main-cont .anim-2d .anim-control-but {
+    width: 200px;
+    min-width: 200px;
+    height: 90px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 6px dashed var(--ex-l-grey);
+    border-radius: 5px;
+    color: var(--ex-l-grey);
+    font-weight: var(--font-bold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    margin: 10px;
+}
+section.main-cont .anim-2d .anim-control-but:hover {
+    border: 6px dashed var(--yellow);
+    transition: border 1s;
+}
+
+
+/* - activate > animation while hovering over a button - | [start] */
+section.main-cont .anim-2d .anim-control-but.progress:hover ~ .anim-exec > #progress-container > #progress-state {
+    transform: scaleX(20) translateX(0);
+}
+section.main-cont .anim-2d .anim-control-but.move:hover ~ .anim-exec > #progress-container > #progress-state {
+    transform: translateX(900%);
+}
+/* - activate > animation while hovering over a button - | [end] */
+
+
+section.main-cont .anim-2d .anim-control-but p {
+    text-align: center;
+}
+section.main-cont .anim-2d h2, section.main-cont .anim-2d h4 {
+    min-width: 100%;
+    color: var(--ex-l-grey);
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+section.main-cont .anim-2d h2 {
+    top: 15px;
+}
+section.main-cont .anim-2d h4 {
+    top: -30px;
+}
+section.main-cont .anim-2d .anim-exec {
+    height: 100px;
+    min-width: 100%;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main-cont .anim-2d .anim-exec #progress-container {
+    width: 200px;
+    height: 30px;
+    background: var(--d-white);
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+section.main-cont .anim-2d .anim-exec #progress-container #progress-state {
+    width: 20px;
+    height: 30px;
+    background: var(--yellow);
+    transition: transform 1s;
+}
+/* - 9. 3D transformations - */
+section.main-cont .anim-3d {
+    flex-wrap: wrap;
+}
+section.main-cont .anim-3d .anim-control-but {
+    width: 200px;
+    min-width: 200px;
+    height: 90px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 6px dashed var(--ex-l-grey);
+    border-radius: 5px;
+    color: var(--ex-l-grey);
+    font-weight: var(--font-bold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    margin: 10px;
+}
+section.main-cont .anim-3d .anim-control-but:hover {
+    border: 6px dashed var(--yellow);
+    transition: border 1s;
+}
+
+section.main-cont .anim-3d .anim-control-but p {
+    text-align: center;
+}
+section.main-cont .anim-3d h2, section.main-cont .anim-3d h4 {
+    min-width: 100%;
+    color: var(--ex-l-grey);
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+section.main-cont .anim-3d h2 {
+    top: 5px;
+}
+section.main-cont .anim-3d h4 {
+    top: -30px;
+}
+section.main-cont .anim-3d .anim-exec {
+    height: 150px;
+    min-width: 100%;
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main-cont .anim-3d .anim-exec #block-container {
+    width: 150px;
+    height: 150px;
+    background: var(--d-white);
+    border-radius: 3px;
+    position: inherit;
+}
+section.main-cont .anim-3d .anim-exec #block-container .animated-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: var(--yellow);
+    transition: transform 1s;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+section.main-cont .anim-3d .anim-exec #block-container .animated-block:last-child {
+    background: Coral;
+    transform: perspective(700px) rotateY(0deg);
+    z-index: 0;
+}
+section.main-cont .anim-3d .anim-exec #block-container .animated-block:last-child {
+    background: Coral;
+    transform: perspective(700px) rotateY(180deg);
+    z-index: 0;
+}
+
+/* - activate > animation while hovering over a button - | [start] */
+section.main-cont .anim-3d .anim-control-but.flip:hover ~ .anim-exec > #block-container > 
+ .animated-block:first-child {
+     transform: perspective(700px) rotateY(-180deg);
+}
+section.main-cont .anim-3d .anim-control-but.flip:hover ~ .anim-exec > #block-container > 
+ .animated-block:last-child {
+     transform: perspective(700px) rotateY(0deg);
+}
+section.main-cont .anim-3d .anim-control-but.rotate:hover ~ .anim-exec > #block-container > 
+ .animated-block:first-child {
+     transform: rotateZ(360deg);
+     transform-origin: 5px 5px;
+}
+/* - activate > animation while hovering over a button - | [end] */
+
+
+/* - 10. Transition - */
+section.main-cont .transition {
+    flex-wrap: wrap;
+}
+section.main-cont .transition .transition-block {
+    width: 200px;
+    background: var(--d-white);
+    border-radius: 100px;
+    position: relative;
+    top: 50px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px 0 30px 0;
+    color: var(--l-grey);
+    font-weight: var(--font-bold);
+}
+section.main-cont .transition .transition-block::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: var(--font-normal);
+    opacity: 0;
+}
+
+
+section.main-cont .transition p {
+    flex-basis: 100%;
+    text-align: center;
+    color: var(--ex-l-grey);
+    font-weight: var(--font-bold);
+    font-size: 1.2em;
+    opacity: 0;
+    margin-top: -80px;
+    transition: opacity .5s;
+}
+
+
+/*  - animation> transition -  | [start] */
+section.main-cont .transition .transition-block:first-child:hover {
+    background: var(--yellow);
+    transition: background 0.5s 1.5s linear;
+}
+section.main-cont .transition .transition-block:last-of-type:hover {
+    background: var(--yellow);
+    transition: background 0.5s 1.5s ease-in;
+}
+section.main-cont .transition .transition-block:hover::before {
+    opacity: 1;
+    transition: opacity 1.5s 1.5s;
+}
+section.main-cont .transition .transition-block:first-child:hover::before {
+    content: "Linear transition with delay";  
+}
+section.main-cont .transition .transition-block:last-of-type:hover::before {
+    content: "Ease-in transition with delay";  
+}
+section.main-cont .transition .transition-block:hover ~ p {
+    opacity: 1;
+}
+/*  - animation> transition -  | [end] */
+
+
+/* - 11. Animation - */
+section.main-cont .animation {
+    position: relative;
+}
+section.main-cont .animation .animation-block {
+    padding: 20px 40px 20px 40px;
+    background: var(--d-white);
+    margin: 10px;
+    margin-top: -300px;
+    border-radius: 100px;
+    font-weight: var(--font-bold);
+    color: var(--ex-l-grey);
+}
+section.main-cont .animation .animation-block:hover {
+    color: var(--l-grey);
+    transition: .5s;
+}
+
+section.main-cont .animation #animation-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 50px;
+    left: 0;
+    background: var(--yellow);
+    transform: translateY(50px);
+    opacity: 0;
+    z-index: 2;
+}
+
+section.main-cont .animation .animation-block.fade-in:hover ~ #animation-container {
+    animation: fade-in 0.3s ease-in forwards;
+}
+section.main-cont .animation .animation-block.widen:hover ~ #animation-container {
+    animation: widen 0.3s ease-in forwards;
+}
+
+/* - animations -  | [start] */
+
+@keyframes fade-in {
+    to {transform: translateY(0); opacity: 1;}
+}
+@keyframes widen {
+    50% {transform: translateY(0); opacity: 1;}
+    100% {transform: translateY(0); opacity: 1; height: 300px; bottom: 0;}
+}
+
+/* - animations -  | [end] */
+
+
+/* ------------------------- */
+
+/* [ @MEDIA QUERIES ] */
+
+@media screen and (max-width: 882px) {
+    /* - header & about me - */
+    
+    :root {
+        --font: 15px;
+    }
+    
+    header {
+        height: 200px;
+    }
+    header p {top: 20px;}
+    
+    header #navbar {
+        width: 80px;
+        height: 47px;
+        top: 50%;
+        margin-top: -23.5px;
+    }
+    
+}
+
+@media screen and (max-width: 795px) {
+    :root {
+        --font: 12px;
+    }
+    
+    header p {top: 35px;}
+    
+    footer p.copyright {top: 80px;}
+}
+
+@media screen and (min-width: 1400px) {
+    /* - about me only - */
+    
+    main section.about div[class *= "about-"] {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    /* - contact me only - */
+    
+    main section.contacts form {
+    margin-left: 20%;
+}
+}
+
+@media screen and (max-width: 1175px) {
+    section.main-cont .text-shadow p {
+        font-size: 5em;
+    }
+}
+
+
+
+
+
+
+
+
+

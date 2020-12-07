@@ -1,0 +1,9 @@
+1. How to delete margin-left of the .about-info block, when it drops below .about-photo ?
+2. How to centralise navbar ?
+3. why is declaration with NO variables more prior than declaration WITH a variable ?
+	Example: .about {background: Orange} .about {background: var(--grey)}
+		- will be still Orange
+4. Why don`t we have to specify the whole name in pseudo class ":not()":
+	main section.contacts form input:not(:first-child) - WORKS
+	main section.contacts form input:not(main section.contacts form input:first-child) - DOES NOT WORK
+5. Is it a good idea to divide css code into independent parts like "header.css", "main_cont.css" ... ?

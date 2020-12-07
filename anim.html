@@ -1,0 +1,215 @@
+<!-- [ LAB 3 PAGE ] -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta charset = "utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>animations page</title>
+    <link rel = "stylesheet" href = "styles/variables.css">
+    <link rel = "stylesheet" href = "styles/header.css">
+    <link rel = "stylesheet" href = "styles/anim.css">
+    <link rel = "stylesheet" href = "styles/interface.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+    <link rel = "stylesheet" href = "styles/menu.css">
+</head>  
+<body>	
+
+    <header>
+        <div id = "navbar">
+            
+        </div>
+        
+        <p>
+            ANDREY RYZHIKOV
+            <span>
+                Student in Mospolytech [2020 - 2024]
+            </span>
+        </p>
+        
+        <img src="imgs/axlogo.png" alt = "logo" class = "ax-logo-back">
+    </header>
+    
+	<!--   [ MENU ]   -->
+	<div id = "menu">
+		<h1>MENU</h1>
+		<ul>
+			<li><a href = "index.html" class = "link">hompage</a></li>
+			<li><a href = "#" class = "link">about</a></li>
+			<li><a href = "lab2.html" class = "link">lab two</a></li>
+			<li><a href = "anim.html" class = "link">lab three</a></li>
+		</ul>
+		<span id = "close">close</span>
+	</div>
+	
+	<!--   [ MAIN PART ]   -->
+    <main>
+        <h1 class = "about-page" style = "background-color: #fff">Lab 3: Text-shadow</h1>
+        <div id = "slider-control-panel">
+            <a class = "slider-ctrl slider-ctrl-left">&#129136; &nbsp;&nbsp; prev</a>
+            <span> &nbsp; - &nbsp; </span>
+            <a class = "slider-ctrl slider-ctrl-right">next &nbsp;&nbsp; &#129138;</a>
+        </div>
+        
+		<section class = "main-cont">
+        
+            <!-- 1. Text-shadow -->
+            <div class = "css-ex text-shadow active-win">
+                <p>Text shadow</p>
+            </div>
+
+            <!-- 2. Word-wrap -->
+            <div class = "css-ex word-wrap">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quisquam, esse soluta voluptatum facere, ex tempore. Autem adipisci sequi tempora ipsum quasi quisquam id, nostrum molestias molestiae reprehenderit excepturi illum distinctio nesciunt a nisi, at consequuntur amet possimus aliquid cupiditate veniam suscipit laborum eos! Expedita quibusdam delectus tenetur, neque, debitis obcaecati itaque nisi aliquam at praesentium optio ex labore quisquam earum perspiciatis temporibus. Magni illo facere consequuntur assumenda quo sunt deleniti minus unde blanditiis nam. Labore recusandae veritatis, nostrum saepe, aliquam sit architecto excepturi voluptatibus ullam aut ea sunt quidem aperiam voluptate delectus. Officiis, dolorem minus velit, eaque rem totam.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quisquam, esse soluta voluptatum facere, ex tempore. Autem adipisci sequi tempora ipsum quasi quisquam id, nostrum molestias molestiae reprehenderit excepturi illum distinctio nesciunt a nisi, at consequuntur amet possimus aliquid cupiditate veniam suscipit laborum eos !</p>
+            </div>
+
+            <!-- 3. RGBA -->
+            <div class = "css-ex rgba">
+                <div class = "mix-block mix-block-green"></div>
+                <div class = "mix-block mix-block-red"></div>
+                <div class = "mix-block  mix-block-blue"></div>
+            </div>
+
+            <!-- 4. Gradient -->
+            <div class = "css-ex gradient">
+                <div class = "gradient-block linear-gradient"><p>Linear gradient</p></div>
+                <div class = "gradient-block radial-gradient"><p>Radial gradient</p></div>
+            </div>
+
+            <!-- 5. Columns -->
+            <div class = "css-ex columns">
+                <div class="column-block"></div>
+                <div class="column-block"></div>
+                <div class="column-block"></div>
+            </div>
+
+            <!-- 6. Box-sizing -->
+            <div class = "css-ex box-sizing">
+                <h2>Square 130 x 130 px</h2>
+                <h4>padding: 10px</h4>
+                <div class = "box-sizing-block no-box-size-block"><p>No box-sizing<br>total width = 150px</p></div>
+                <div class = "box-sizing-block box-sized-block"><p>Box-sized block<br>total width = 130px</p></div>
+            </div>
+
+            <!-- 7. Resizing text-area -->
+            <div class = "css-ex text-area-resize">
+                <textarea cols = "30" rows = "10" placeholder = "A resizable textarea ..."></textarea>
+            </div>
+
+            <!-- 8. 2D transformations -->
+            <div class = "css-ex anim-2d">
+                <h2>Hover over a button</h2>
+                <h4>to start a transformation</h4>
+                <div class="anim-control-but progress"><p>Progress bar</p></div>
+                <div class="anim-control-but move"><p>Moving block</p></div>
+                <div class="anim-exec">
+                    <div id="progress-container">
+                        <div id="progress-state"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. 3D transformations -->
+            <div class = "css-ex anim-3d">
+                <h2>Hover over a button</h2>
+                <h4>to start a transformation</h4>
+                <div class="anim-control-but flip"><p>Flipping block</p></div>
+                <div class="anim-control-but rotate"><p>Rotating block</p></div>
+                <div class="anim-exec">
+                    <div id = "block-container">
+                        <div class = "animated-block"></div>
+                        <div class = "animated-block"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Transition -->
+            <div class = "css-ex transition">
+                <div class = "transition-block">Hover over me!</div>
+                <div class = "transition-block">Hover over me!</div>
+                <p>Wait a second !</p>
+            </div>
+
+            <!-- 11. Animation -->
+            <div class = "css-ex animation">
+                <div class = "animation-block fade-in">Animation one</div>
+                <div class = "animation-block widen">Animation two</div>
+                <div id = "animation-container"></div>
+            </div>
+
+			
+		</section>
+		
+    </main>
+	
+   
+   <script type = "text/javascript">	
+        // [ MENU ]
+		var nav = document.querySelector("#navbar");
+			menu = document.querySelector("#menu");
+			cls = document.querySelector("#close");
+			
+		nav.onclick = function() {
+			menu.style.display = "block";
+            document.body.style.overflow = "hidden";
+		}
+		cls.onclick = function() {
+			menu.style.display = "none";
+            document.body.style.overflow = "auto";
+		}
+        
+        // [ SLIDER ]
+        var ind = 1;
+            prev = document.querySelector(".slider-ctrl-left");
+            next = document.querySelector(".slider-ctrl-right");
+            title = document.querySelector(".about-page");
+            titles = ["Text-shadow", "Word-wrap", "rgba", "Gradient", "Columns", "Box-sizing", "Resizing text-area",
+                      "2D transformations", "3D transformations", "Transition", "Animation"];
+       
+        
+        next.onclick = function() {
+            document.querySelector(".css-ex:nth-child(" + ind + ")").classList.remove("active-win");
+            ind == 11 ? ind = 1 : ind++;
+            title.innerHTML = "Lab 3: " + titles[ind - 1];
+            document.querySelector(".css-ex:nth-child(" + ind + ")").classList.add("active-win");
+        }
+        prev.onclick = function() {
+            document.querySelector(".css-ex:nth-child(" + ind + ")").classList.remove("active-win");
+            ind == 1 ? ind = 11 : ind--;
+            title.innerHTML = "Lab 3: " + titles[ind - 1];
+            document.querySelector(".css-ex:nth-child(" + ind + ")").classList.add("active-win");
+        }
+	</script>
+    
+    <footer>
+        <img src="imgs/axlogo.png" alt = "logo">
+        <p class = "copyright">&copy; 2020 axotellix.me | All rights reserved</p>
+    </footer>
+</body>  
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

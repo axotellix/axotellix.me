@@ -1,0 +1,317 @@
+
+body {
+    margin: 0px !important;
+    background: var(--d-white);
+    font-size: var(--font);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* [ MAIN CONTENT ] */
+
+main section {
+    display: block;
+}
+
+main .heading {
+    color: var(--ex-l-grey);
+    font-size: 3.2em;
+    display: block;
+}
+main .heading.heading-small {
+    font-size: 2em;
+}
+
+main .heading::before {
+    content: "";
+    width: 200px;
+    height: 2.5px;
+    background: var(--yellow);
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+main .heading.heading-small::before {
+    width: 100px;
+}
+
+
+/* [ ABOUT ME ] */
+main section.about div[class *= "about-"] {
+    display: inline-block;
+    height: 450px;
+    background: var(--grey);
+    position: relative;
+}
+
+main section.about .about-photo {
+    width: 350px;
+}
+main section.about .about-photo img {
+    position: absolute;
+    width: 30%;
+    top: 35%;
+    left: 35%;
+}
+main section.about .about-info {
+    width: 55%;
+    min-width: 500px;
+    max-width: 800px;
+    margin-left: 15px;
+    background: var(--white)!important;
+}
+
+main section.about .about-info h1,
+ main section.about .about-info p,
+ main section.about .about-info a {
+     float: left;
+     margin: 0 40px;
+     color: var(--l-grey);
+}
+main section.about .about-info h1 {margin-top: 30px;}
+main section.about .about-info p {
+    margin-top: 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 14;
+    -webkit-box-orient: vertical;
+}
+main section.about .about-info a {
+    color: var(--green);
+    text-decoration: none;
+    margin-top: 40px;
+    font-size: 1.2em;
+    font-weight: var(--font-bold);
+}
+main section.about .about-info a:hover {
+    filter: brightness(120%);
+    transition: filter 0.25s;
+}
+main section.about .about-info a:active {
+    filter: brightness(100%);
+}
+
+/* [ CONTACT ME ] */
+main section.contacts {
+    margin-top: 50px;
+    height: auto;
+    padding-bottom: 50px;
+    background: var(--grey);
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+main section.contacts form {
+    margin-left: 16%;
+}
+main section.contacts form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main section.contacts form input,
+main section.contacts form textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: var(--d-white);
+}
+
+main section.contacts form elset.form-elements {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+}
+main section.contacts form elset.form-elements.textarea {margin-left: 15px;}
+
+
+main section.contacts form elset.form-elements.inputs input {
+    width: 100%;
+}
+
+main section.contacts form input, 
+ main section.contacts form elset.form-elements.textarea {
+    background: var(--l-grey);
+    border-radius: 100px;
+    padding: 10px 25px;
+    position: relative;
+    display: block;
+}
+main section.contacts form input:not(:first-child) {margin-top: 15px;}
+main section.contacts form elset.form-elements.textarea {
+    border-radius: 20px;
+    padding: 20px 30px 30px 30px;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main section.contacts form input[name = "subject"],
+ main section.contacts form textarea {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+main section.contacts form input[name = "subject"] {
+    filter: brightness(120%);
+}
+
+main section.contacts form textarea {
+    resize: none;
+    max-height: 350px;
+    height: 350px;
+    margin-top: 25px;
+    background: transparent;
+    padding: 0 10px;
+}
+
+main section.contacts form input[type = "submit"] {
+    display: block;
+    background: var(--green);
+    color: var(--white);
+    padding: 12px 50px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-weight: var(--font-bold);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: filter 0.25s;
+}
+
+main section.contacts form input[type = "submit"]:hover {
+    filter: brightness(110%);
+}
+
+main section.contacts form input[type = "submit"]:active {
+    filter: brightness(90%);
+}
+
+
+main section.contacts table.contacts-list {
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    color: var(--d-white);
+    font-weight: var(--font-light);
+}
+
+main section.contacts table.contacts-list td {
+    border: 2px solid var(--l-grey);
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* ------------------------- */
+
+
+/* [ @MEDIA QUERIES ] */
+
+@media screen and (max-width: 980px) {
+    /* - contact form only - */
+    
+    main section.contacts form {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 500px;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    
+    main section.contacts form elset.form-elements.textarea {
+        margin-left: 0;
+        margin-top: 15px;
+        clear: left;
+    }
+    main section.contacts form elset.form-elements {
+        display: block;
+        margin: 0 auto;
+    }
+    
+     main section.contacts form elset.form-elements  {
+         width: 100% !important;
+         max-width: 500px !important;
+    }
+    
+    main section.contacts form input[type = "submit"] {
+        position: absolute;
+        left: 10%;
+        bottom: 20px;
+        width: 80% !important;
+        max-width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    /* - header & about me - */
+    
+    :root {
+        --font: 15px;
+    }
+    
+    header {
+        height: 200px;
+    }
+    header p {top: 20px;}
+    
+    header navbar {
+        width: 80px;
+        height: 47px;
+        top: 50%;
+        margin-top: -23.5px;
+    }
+    
+    main section.about div[class *= "about-"] {
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    main section.about .about-photo {
+        width: 200px;
+        height: 280px !important;
+    }
+    
+    main section.about .about-info {
+        margin-left: 0;
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    :root {
+        --font: 12px;
+    }
+    
+    header p {top: 35px;}
+    
+    footer p.copyright {top: 80px;}
+}
+
+@media screen and (min-width: 1400px) {
+    /* - about me only - */
+    
+    main section.about div[class *= "about-"] {
+        max-width: 1000px;
+    }
+}
+
+
+
+
+
+
+
+
+

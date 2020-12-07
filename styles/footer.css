@@ -1,0 +1,23 @@
+/* [ FOOTER ] */
+footer {
+    background: var(--l-grey);
+    height: 200px;
+    position: relative;
+}
+
+footer img {
+    height: 90%;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    opacity: 0.15;
+    
+}
+
+footer p.copyright {
+    color: var(--d-white);
+    font-weight: var(--font-light);
+    position: absolute;
+    left: 170px;
+    top: 72px;
+}

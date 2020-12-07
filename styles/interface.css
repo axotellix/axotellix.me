@@ -1,0 +1,32 @@
+:root {
+    /* colours */
+    --yellow: #F3D34C;
+    --d-yellow: #DEC239;
+    --grey: #2C2F33;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+    cursor: alias;
+}
+:not(body)::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:active {
+    background: var(--d-yellow);
+}
+::-webkit-scrollbar-track {
+    border: none;
+	background: var(--grey);
+}
+:not(body)::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+textarea {
+    cursor: auto;
+}

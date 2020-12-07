@@ -1,0 +1,65 @@
+/* [ HEADER ] */
+
+header {
+    background: var(--grey);
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+header div#navbar {
+    background: var(--l-grey);
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    padding-right: 10px;
+    left: 0px;
+    top: 50%;
+    margin-top: -35px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    background-image: url(../imgs/menu.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 80%;
+    transition: filter 0.25s;
+}
+
+header div#navbar:hover {
+    filter: brightness(120%);
+}
+
+header div#navbar:active {
+    background-size: 37% 39%;
+    background-position: 81%;
+    filter: brightness(110%);
+}
+
+
+header p {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    color: var(--d-white);
+    font-size: 3.2em;
+    top: 60px;
+    right: 100px;
+    line-height: 0.8em;
+    font-weight: var(--font-bold);
+    z-index: 1;
+}
+
+header p span {
+    display: block;
+    font-size: 0.42em;
+    font-weight: var(--font-normal);
+}
+
+header img {
+    position: absolute;
+    right: 110px;
+    top: 5%;
+    height: 90%;
+    opacity: 0.15;
+}
