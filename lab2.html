@@ -12,6 +12,7 @@
     <link rel = "stylesheet" href = "styles/interface.css">
     <link rel = "stylesheet" href = "styles/footer.css">
     <link rel = "stylesheet" href = "styles/menu.css">
+    <link rel = "stylesheet" href = "styles/jQuery.css">
     <script src = 'scripts/jquery-3.5.1.min.js'></script>
     <script src = 'scripts/jQuery.js'></script>
     
@@ -99,28 +100,28 @@
             <h3 class="jq-heading">jQuery: что желаете сделать?</h3>
 
             <ul>
-                <li><button id = '' class = 'jq-options'>fadeOut:<span>Скрыть меню</span></button></li>
-                <li><button id = '' class = 'jq-options'>trigger:<span>нажмите, чтобы сработала кнопка 1 (fadeOut)</span></button></li>
-                <li><button id = '' class = 'jq-options'>addClass:<span>добавить класс "button-light" этой кнопке</span></button></li>
-                <li><button id = '' class = 'jq-options'>click:<span>нажите на кнопку, чтобы изменить текст</span></button></li>
-                <li><button id = '' class = 'jq-options'>find:<span>удалить тег &lt;span&gt; этой кнопки</span></button></li>
-                <li><button id = '' class = 'jq-options'>css:<span>изменить стили этой кнопки</span></button></li>
-                <li><button id = '' class = 'jq-options'>filter:<span>перекрасить 5-ую кнопку</span></button></li>
-                <li><button id = '' class = 'jq-options'>toggleClass:<span>добавить / убрать класс "button-light"</span></button></li>
-                <li><button id = '' class = 'jq-options'>attr:<span>добавить / изменить атрибут "value"</span></button></li>
-                <li><button id = '' class = 'jq-options'>hide:<span>скрыть кнопку</span></button></li>
-                <li><button id = '' class = 'jq-options'>show:<span>показать предыдующую кнопку</span></button></li>
-                <li><button id = '' class = 'jq-options'>wrap:<span>обернуть &lt;span&gt; тегом &lt;em&gt;</span></button></li>
-                <li><button id = '' class = 'jq-options'>prepend:<span>добавить еще одну кнопку в начало</span></button></li>
-                <li><button id = '' class = 'jq-options'>append:<span>добавить еще одну кнопку в конец</span></button></li>
-                <li><button id = '' class = 'jq-options'>html:<span>изменить код кнопки</span></button></li>
+                <li><button id = 'jq_fadeOut' class = 'jq-options'>fadeOut:<span>Скрыть меню</span></button></li>
+                <li><button id = 'jq_trigger' class = 'jq-options'>trigger:<span>нажмите, чтобы сработала кнопка 1 (fadeOut)</span></button></li>
+                <li><button id = 'jq_addClass' class = 'jq-options'>addClass:<span>добавить класс "button-light" этой кнопке</span></button></li>
+                <li><button id = 'jq_toggleClass' class = 'jq-options'>toggleClass:<span>добавить / убрать класс "button-light"</span></button></li>
+                <li><button id = 'jq_click' class = 'jq-options'>click:<span>нажите на кнопку, чтобы изменить текст</span></button></li>
+                <li><button id = 'jq_find' class = 'jq-options'>find:<span>удалить тег &lt;span&gt; этой кнопки</span></button></li>
+                <li><button id = 'jq_css' class = 'jq-options'>css:<span>изменить стили этой кнопки</span></button></li>
+                <li><button id = 'jq_filter' class = 'jq-options'>filter:<span>перекрасить 5-ую кнопку</span></button></li>
+                <li><button id = 'jq_attr' class = 'jq-options'>attr:<span>добавить / изменить атрибут "disabled"</span></button></li>
+                <li><button id = 'jq_hide' class = 'jq-options'>hide:<span>скрыть кнопку</span></button></li>
+                <li><button id = 'jq_show' class = 'jq-options'>show:<span>показать предыдующую кнопку</span></button></li>
+                <li><button id = 'jq_wrap' class = 'jq-options'>wrap:<span>обернуть &lt;span&gt; тегом &lt;em&gt;</span></button></li>
+                <li><button id = 'jq_prepend' class = 'jq-options'>prepend:<span>добавить еще одну кнопку в начало</span></button></li>
+                <li><button id = 'jq_append' class = 'jq-options'>append:<span>добавить еще одну кнопку в конец</span></button></li>
+                <li><button id = 'jq_html' class = 'jq-options'>html:<span>изменить код кнопки</span></button></li>
             </ul>
         </div>
     </div>
     <main>
 		<section class = "main-cont">
 			<h1 style = "background-color: #fff">Welcome back !</h1>
-			<a href = "#" class = "link">> jQuery <</a>
+			<a href = "#" class = "link jquery">> jQuery <</a>
 			<hr>
 			
 			<h3>Just an article</h3>

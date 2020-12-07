@@ -29,6 +29,7 @@ div.jq-modal {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 /* -- Modal: menu -- */
 .jq-modal .jq-modal-menu {
@@ -41,6 +42,7 @@ div.jq-modal {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    z-index: 10;
 }
 /* -- Modal menu: heading -- */
 .jq-modal .jq-modal-menu .jq-heading {
