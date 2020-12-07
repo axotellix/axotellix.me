@@ -1,4 +1,11 @@
 $(() => {
+    
+    // PLUGINS  & WIDGETS
+     // init > tabs
+    $('#tabs').tabs();
+
+     // init > lightbox
+     $('a[data-rel^=lightcase]').lightcase();
 
     // open > modal window
     $('a.jquery').click(() => {
