@@ -9,6 +9,88 @@ body {
 
 /* [ MAIN CONTENT ] */
 
+/* - for jQuery - */
+/* - Modal: modal window toggle button - */
+a.link {
+    transition: background 0.25s;
+}
+a.link:hover {
+    background: var(--green);
+}
+/* - Modal: Modal window - */
+div.jq-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -- Modal: menu -- */
+.jq-modal .jq-modal-menu {
+    width: 50%;
+    height: 85%;
+    background-color: var(--yellow);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+/* -- Modal menu: heading -- */
+.jq-modal .jq-modal-menu .jq-heading {
+    text-align: center;
+    font-weight: var(--font-bold);
+    color: var(--l-grey);
+}
+/* -- Modal menu: option list -- */
+.jq-modal .jq-modal-menu ul {
+    overflow-Y: auto;
+    list-style-type: none;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+/* -- Modal menu: buttons -- */
+.jq-modal .jq-modal-menu ul li {
+    width: 90%;
+    margin: 5px auto;
+}
+.jq-modal .jq-modal-menu button.jq-options {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+    background: var(--grey);
+    border: none;
+    outline: none;
+    transition: background 0.25s;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: var(--font-bold);
+    font-family: 'Montserrat';
+    color: var(--d-white);
+    line-height: 1.05em;
+}
+.jq-modal .jq-modal-menu button.jq-options:hover {
+    background: var(--l-grey);
+}
+.jq-modal .jq-modal-menu button.jq-options:active {
+    background: var(--grey);
+}
+/* -- Modal menu: buttons` description -- */
+.jq-modal .jq-modal-menu button.jq-options span {
+    display: block;
+    font-size: 0.6em;
+    font-weight: var(--font-normal);
+}
+
+
 /* -- EXAMPLE OF OVERWRITING RULES -- */
 
 main section.main-cont h1 { background: Black; }
